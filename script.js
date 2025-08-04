@@ -7,25 +7,25 @@ let isExplorationMode = false;
 const scenes = [
     {
         title: "Welcome to the 2024 F1 Championship",
-        description: "The 2024 Formula 1 season has been one of the craziest and most competitive in recent memory. With 24 races across the globe, drivers and teams have battled for every point in their rise to the top. In this project, we'll explore the story of this incredible season.",
+        description: "The 2024 Formula 1 season was filled with crazy moments and intense rivalries between drivers, teams, and team principals. There were 24 races this season in places around the world, with drivers fighting to secure points for themselves and their teams. In this project, we'll explore the story of this season by diving into the results of the season.",
         visualization: "overview",
         allowInteraction: false
     },
     {
         title: "The Driver Championship Battle",
-        description: "Max Verstappen dominated the season with an incredible 19 victories, but the battle behind him was fierce. Charles Leclerc, Lando Norris, and Carlos Sainz fought tooth and nail for every podium position, creating one of the most exciting championship battles in F1 history.",
+        description: "Max Verstappen was dominant this season and earned himself the Driver's Championship with 19 wins. However, the battle for the remaining top spots was also fierce. Charles Leclerc, Lando Norris, Oscar Piastri, and Carlos Sainz were competing with each other to the very end. This season was definitely one of the most exciting and competitive seasons in the history of F1.",
         visualization: "driver_championship",
         allowInteraction: false
     },
     {
         title: "The Constructors' Cup",
-        description: "While Red Bull Racing secured their dominance, the battle for second place was intense. Ferrari, McLaren, and Mercedes traded positions throughout the season, it could have been anyone's place for the taking. Although McLaren did not win the Driver's Championship, they were able to get the prestigious Constructor's Cup for the 9th time in their history!",
+        description: "Red Bull may have won the Driver's Championship, but they were actually out of the running for the Constructors' Championship. McLaren ended up winning the Constructors' cup, but Ferrari was a very close second. Red Bull came in third, but Ferrari was ahead by a pretty wide margin. McLaren ended up winning the prestigious Constructors' Cup for the 9th time in their history!",
         visualization: "team_championship",
         allowInteraction: false
     },
     {
         title: "Explore the Season Yourself",
-        description: "Now dive into the complete 2024 season data! Hover over drivers and teams to see their detailed statistics, explore race-by-race results, and discover the patterns that shaped this incredible championship season.",
+        description: "On this scene, you can explore all of the data from the season yourself. On the graph below, you can hover over a driver to see more stats such as the points earned on the race, what their position was, and whether they were the fastest lap. You can also filter to explore data for specific races or teams.",
         visualization: "exploration",
         allowInteraction: true
     }
@@ -545,7 +545,7 @@ function createExplorationVisualization() {
     
     container.innerHTML = `
         <div class="exploration-notice">
-            🏎️ Welcome to the exploration phase! You can hover over points to see detailed statistics. Use the filters below to explore specific races or teams.
+            🏎️ Hover over points to see data about specific drivers/teams. Use the filters below to select specific races or teams you want to look at.
         </div>
     `;
     
