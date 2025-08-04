@@ -420,17 +420,7 @@ function createDriverChampionshipVisualization() {
         .attr('transform', `translate(${margin.left},0)`)
         .call(d3.axisLeft(y));
     
-    const verstappen = topDrivers.find(d => d.name === 'Max Verstappen');
-    if (verstappen) {
-        svg.append('text')
-            .attr('x', x(verstappen.name) + x.bandwidth() / 2)
-            .attr('y', y(verstappen.totalPoints) - 30)
-            .attr('text-anchor', 'middle')
-            .style('font-size', '12px')
-            .style('font-weight', 'bold')
-            .style('fill', '#FFD700')
-            .text('🏆 Champion');
-    }
+
 }
 
 function createTeamChampionshipVisualization() {
@@ -527,17 +517,7 @@ function createTeamChampionshipVisualization() {
         .attr('transform', `translate(${margin.left},0)`)
         .call(d3.axisLeft(y));
     
-    const redBull = teams.find(d => d.name === 'Red Bull Racing Honda RBPT');
-    if (redBull) {
-        svg.append('text')
-            .attr('x', x(redBull.name) + x.bandwidth() / 2)
-            .attr('y', y(redBull.totalPoints) - 30)
-            .attr('text-anchor', 'middle')
-            .style('font-size', '12px')
-            .style('font-weight', 'bold')
-            .style('fill', '#FFD700')
-            .text('🏆 Champions');
-    }
+
 }
 
 function createExplorationVisualization() {
